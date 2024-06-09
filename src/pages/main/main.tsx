@@ -3,7 +3,6 @@ export default function Main() {
     <div>
       <div>
         <div>신민호</div>
-        Main
       </div>
     </div>
   );

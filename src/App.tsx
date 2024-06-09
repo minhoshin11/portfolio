@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Nav from "./components/nav";
-import About from "./pages/about";
-import Main from "./pages/main";
-import Project from "./pages/project";
+import About from "./pages/about/about";
+import Main from "./pages/main/main";
+import Project from "./pages/project/project";
 
 function App() {
   return (

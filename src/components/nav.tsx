@@ -5,10 +5,16 @@ export default function Nav() {
   return (
     <div>
       <div className={styles.navContainer}>
-        <Link to="/">Home</Link>
+        <Link to="/" className={styles.homeLink}>
+          Minho Shin
+        </Link>
         <div className={styles.linkBox}>
-          <Link to="/project">Project</Link>
-          <Link to="/about">About</Link>
+          <Link to="/project" className={styles.link}>
+            Project
+          </Link>
+          <Link to="/about" className={styles.link}>
+            About
+          </Link>
         </div>
       </div>
     </div>

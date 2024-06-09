@@ -1,0 +1,89 @@
+import styles from "./index.module.css";
+export default function About() {
+  return (
+    <div>
+      <div className={styles.aboutContainer}>
+        <div className={styles.aboutColor}>
+          <div style={{ fontFamily: "Medium" }}>ABOUT ME</div>
+          <div className={styles.aboutMeBox}>
+            <ul className={styles.aboutList}>
+              <li className={styles.aboutLi}>
+                <div>이름</div>
+                <div>신민호</div>
+              </li>
+              <li className={styles.aboutLi}>
+                <div>생년월일</div>
+                <div>97.06.13</div>
+              </li>
+              <li className={styles.aboutLi}>
+                <div>주소지</div>
+                <div>서울특별시 마포구</div>
+              </li>
+            </ul>
+            <ul className={styles.aboutList}>
+              <li className={styles.aboutLi}>
+                <div>연락처</div>
+                <div>010-2237-7592</div>
+              </li>
+              <li className={styles.aboutLi}>
+                <div>이메일</div>
+                <div style={{ fontFamily: "initial" }}>
+                  tlsalsgh777@naver.com
+                </div>
+              </li>
+              <li className={styles.aboutLi}>
+                <div>학력</div>
+                <div>단양고등학교</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.skillColor}>
+          <div style={{ fontFamily: "Medium" }}>Skills</div>
+          <div className={styles.skillContainer}>
+            <div className={styles.Tools}>
+              <div className={styles.whiteToolBox}>
+                <div className={styles.skillName}>FrontEnd</div>
+                <div>html</div>
+                <div>css</div>
+                <div>javaScript</div>
+                <div>React</div>
+                <div>typeScript</div>
+              </div>
+            </div>
+            <div className={styles.Tools}>
+              <div className={styles.whiteToolBox}>
+                <div className={styles.skillName}>Collaboration Tools</div>
+                <div>git</div>
+                <div>GitHub</div>
+                <div>Discord</div>
+                <div>Figma</div>
+              </div>
+            </div>
+            <div className={styles.Tools}>
+              <div className={styles.whiteToolBox}>
+                <div className={styles.skillName}>Deployment</div>
+                <div>Vercel</div>
+                <div>netlify</div>
+              </div>
+            </div>
+
+            <div></div>
+          </div>
+        </div>
+        <div className={styles.archivingColor}>
+          <div>ARCHIVING</div>
+          <div className={styles.archivingContainer}>
+            <div className={styles.archivingWhiteBox}>
+              <div>GitHub</div>
+              <div>깃허브에 관한 페이지입니다.</div>
+            </div>
+            <div className={styles.archivingWhiteBox}>
+              <div>Blog</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

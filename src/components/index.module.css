@@ -4,4 +4,26 @@
   padding: 0 30px;
   height: 4vh;
   align-items: center;
+  font-family: "Light";
+  font-size: 25px;
+}
+.homeLink {
+  font-family: "Bold";
+  text-decoration: none;
+  font-size: 27px;
+  color: black;
+}
+.linkBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s ease;
+}
+
+.link:hover {
+  color: gray;
 }
