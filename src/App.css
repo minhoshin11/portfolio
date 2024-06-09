@@ -1,0 +1,10 @@
+body {
+  background-image: url("/star.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: auto;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0); /* 투명한 흰색 배경 */
+  background-blend-mode: lighten; /* 이미지를 밝게 하여 내용이 잘 보이게 함 */
+}

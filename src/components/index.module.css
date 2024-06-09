@@ -1,11 +1,16 @@
 .navContainer {
   display: flex;
   justify-content: space-between;
-  padding: 0 30px;
-  height: 4vh;
+  padding-left: 30px;
+  padding-right: 10px;
+  height: 6vh;
   align-items: center;
   font-family: "Light";
   font-size: 25px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 .homeLink {
   font-family: "Bold";
@@ -15,8 +20,9 @@
 }
 .linkBox {
   display: flex;
-  justify-content: space-between;
   gap: 20px;
+  width: 330px;
+  justify-content: center;
 }
 .link {
   text-decoration: none;

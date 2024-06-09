@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./index.module.css";
 export default function About() {
   return (
@@ -75,11 +76,28 @@ export default function About() {
           <div>ARCHIVING</div>
           <div className={styles.archivingContainer}>
             <div className={styles.archivingWhiteBox}>
-              <div>GitHub</div>
-              <div>깃허브에 관한 페이지입니다.</div>
+              <Link
+                className={styles.PageLink}
+                to="https://github.com/minhoshin11"
+              >
+                GitHub
+              </Link>
+              <div>
+                <div>과거 프로젝트</div>
+                <div>혼자 연습했던 소스코드</div>
+              </div>
             </div>
             <div className={styles.archivingWhiteBox}>
-              <div>Blog</div>
+              <Link
+                className={styles.PageLink}
+                to="https://dailycoding777.tistory.com/"
+              >
+                Blog
+              </Link>
+              <div>
+                <div>트러블 슈팅</div>
+                <div>회고</div>
+              </div>
             </div>
           </div>
         </div>
