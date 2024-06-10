@@ -12,6 +12,21 @@ body {
   padding-bottom: 150px;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.aboutColor,
+.skillColor,
+.archivingColor {
+  opacity: 0;
+}
+
 .aboutColor {
   display: flex;
   flex-direction: column;
@@ -25,6 +40,7 @@ body {
   margin-bottom: 2px;
   font-size: 20px;
   margin-top: 150px;
+  animation: fadeIn 1s forwards;
 }
 
 .aboutMeBox {
@@ -57,6 +73,8 @@ body {
   box-sizing: border-box;
   border-radius: 10px;
   padding: 30px 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
 }
 
 .skillContainer {
@@ -97,6 +115,8 @@ body {
   border-radius: 10px;
   padding: 15px 0;
   margin-bottom: 2px;
+  animation: fadeIn 1s forwards;
+  animation-delay: 2s;
 }
 
 .archivingContainer {

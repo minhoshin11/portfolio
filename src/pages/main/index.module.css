@@ -1,0 +1,103 @@
+.mainContainer {
+  color: white;
+  padding-top: 30vh;
+  font-family: "Bold";
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  gap: 30px;
+}
+
+/* 공통 애니메이션 스타일 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes underlineExpand {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.line1,
+.line2,
+.line3,
+.line4,
+.buttonBox {
+  opacity: 0; /* 처음엔 안보이도록 설정 */
+}
+
+.line1 {
+  animation: fadeIn 1s forwards;
+}
+
+.line2 {
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+.line3 {
+  animation: fadeIn 1s forwards;
+  animation-delay: 2s;
+}
+
+.line4 {
+  animation: fadeIn 1s forwards;
+  animation-delay: 3s;
+}
+.contentExplain {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.name {
+  position: relative;
+  display: inline-block;
+  animation: colorChange 2s forwards;
+  animation-delay: 2s; /* 빨갛게 변하는 애니메이션 지연시간 설정 */
+}
+
+.name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* 밑줄 위치 조정 */
+  width: 0;
+  height: 5px; /* 밑줄 두께 */
+  background-color: white; /* 밑줄 색상 */
+  animation: underlineExpand 1s forwards;
+  animation-delay: 1s; /* 밑줄 애니메이션 지연시간 설정 */
+}
+
+.buttonBox {
+  display: flex;
+  padding: 0 25vw;
+  justify-content: space-between;
+  /* animation: fadeIn 0s forwards;
+  animation-delay: 0s; */
+  padding-bottom: 10vw;
+  margin-top: 150px;
+  animation: fadeIn 1s forwards;
+  animation-delay: 4s;
+}
+
+.buttons {
+  transition: 0.5s ease;
+}
+
+.buttons:hover {
+  color: gray;
+  cursor: pointer;
+}
