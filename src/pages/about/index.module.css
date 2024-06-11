@@ -9,7 +9,9 @@ body {
   text-align: center;
   height: auto;
   gap: 10px;
-  padding-bottom: 150px;
+  padding-top: 6vh;
+  padding-bottom: 30px;
+  /* padding-bottom: 150px; */
 }
 
 @keyframes fadeIn {
@@ -39,7 +41,7 @@ body {
   padding: 15px 0;
   margin-bottom: 2px;
   font-size: 20px;
-  margin-top: 150px;
+  margin-top: 30px;
   animation: fadeIn 1s forwards;
 }
 
@@ -79,7 +81,9 @@ body {
 
 .skillContainer {
   display: flex;
-  justify-content: space-between;
+
+  justify-content: center;
+  gap: 20px;
   text-align: center;
 }
 
@@ -87,7 +91,7 @@ body {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: 30%;
   gap: 10px;
 }
 
@@ -102,9 +106,17 @@ body {
 .skillName {
   box-sizing: border-box;
   border-bottom: 1px solid #ffbf00;
+  margin: 30px 0;
+}
+
+.whiteToolBox img {
+  /* margin-right: 20px; */
+  padding: 5px;
+  margin-bottom: 30px;
 }
 
 .archivingColor {
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   width: 90vw;
@@ -137,7 +149,7 @@ body {
   border: 3px solid black;
   color: black;
   width: 40%;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
 .PageLink {

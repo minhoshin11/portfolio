@@ -40,32 +40,134 @@ export default function About() {
           </div>
         </div>
         <div className={styles.skillColor}>
-          <div style={{ fontFamily: "Medium" }}>Skills</div>
+          <div
+            style={{ fontFamily: "Medium", color: "black", fontSize: "20px" }}
+          >
+            Skills
+          </div>
           <div className={styles.skillContainer}>
             <div className={styles.Tools}>
               <div className={styles.whiteToolBox}>
                 <div className={styles.skillName}>FrontEnd</div>
-                <div>html</div>
-                <div>css</div>
-                <div>javaScript</div>
-                <div>React</div>
-                <div>typeScript</div>
+                <div>
+                  <div>
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                      alt="html5"
+                      width="80"
+                      height="80"
+                    />
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                      alt="css3"
+                      width="80"
+                      height="80"
+                    />
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                      alt="javascript"
+                      width="80"
+                      height="80"
+                    />
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                      alt="typescript"
+                      width="80"
+                      height="80"
+                    />
+                  </div>
+                  <div>
+                    {/* <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                      alt="javascript"
+                      width="70"
+                      height="70"
+                      />
+                      <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                      alt="typescript"
+                      width="70"
+                      height="70"
+                      /> */}
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                      alt="react"
+                      width="80"
+                      height="80"
+                    />{" "}
+                    <img
+                      src="https://www.vectorlogo.zone/logos/reactrouter/reactrouter-ar21.svg"
+                      alt="reactRouter"
+                      width="80"
+                      height="80"
+                    />
+                    <img
+                      src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
+                      alt="nextjs"
+                      width="80"
+                      height="80"
+                    />
+                    <img
+                      src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg"
+                      alt="bootstrap"
+                      width="100"
+                      height="70"
+                    />
+                  </div>
+                  {/* <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+                    alt="redux"
+                    width="70"
+                    height="70"
+                  /> */}
+                </div>
               </div>
             </div>
             <div className={styles.Tools}>
               <div className={styles.whiteToolBox}>
                 <div className={styles.skillName}>Collaboration Tools</div>
-                <div>git</div>
-                <div>GitHub</div>
-                <div>Discord</div>
-                <div>Figma</div>
+                <img
+                  src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+                  alt="git"
+                  width="70"
+                  height="70"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/github/github-tile.svg"
+                  alt="github"
+                  width="70"
+                  height="70"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/discord/discord-tile.svg"
+                  alt="discord"
+                  width="70"
+                  height="70"
+                />
+
+                <img
+                  src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
+                  alt="figma"
+                  width="70"
+                  height="70"
+                />
               </div>
             </div>
             <div className={styles.Tools}>
               <div className={styles.whiteToolBox}>
                 <div className={styles.skillName}>Deployment</div>
-                <div>Vercel</div>
-                <div>netlify</div>
+                <img
+                  src="https://www.vectorlogo.zone/logos/vercel/vercel-ar21.svg"
+                  alt="github"
+                  width="160"
+                  height="70"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/netlify/netlify-ar21.svg"
+                  alt="github"
+                  width="160"
+                  height="70"
+                />
               </div>
             </div>
 

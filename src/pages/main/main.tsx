@@ -9,21 +9,21 @@ export default function Main() {
       <div className={styles.mainContainer}>
         <div
           className={`${styles.text} ${styles.leftToCenter}`}
-          style={{ animationDelay: "0s", animationDuration: "1s" }}
+          style={{ animationDelay: "0s", animationDuration: "2s" }}
         >
-          FrontEnd
+          유저 경험을
         </div>
         <div
           className={`${styles.text} ${styles.rightToCenter}`}
-          style={{ animationDelay: "0.5s", animationDuration: "1.5s" }}
+          style={{ animationDelay: "1.5s", animationDuration: "1.5s" }}
         >
-          개발자
+          중시하는
         </div>
         <div
           className={`${styles.text} ${styles.myName}`}
-          style={{ animationDelay: "1.6s", animationDuration: "3s" }}
+          style={{ animationDelay: "3.0s", animationDuration: "3s" }}
         >
-          신민호
+          FrontEnd 신민호
         </div>
 
         {/* <div className={styles.line1}>방문해주셔서 감사합니다.</div>

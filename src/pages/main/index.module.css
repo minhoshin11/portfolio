@@ -106,7 +106,7 @@
   width: 0;
   background-color: white;
   animation: underlineExpand 1s forwards;
-  animation-delay: 2s; /* 밑줄 애니메이션 딜레이 */
+  animation-delay: 3.5s; /* 밑줄 애니메이션 딜레이 */
 }
 
 /* 버튼 박스 및 버튼 스타일 */
@@ -118,7 +118,7 @@
   margin-top: 150px;
   opacity: 0; /* 초기 상태를 숨김 */
   animation: fadeIn 1s forwards;
-  animation-delay: 4s; /* 글자 애니메이션 후 버튼 애니메이션 시작 */
+  animation-delay: 6s; /* 글자 애니메이션 후 버튼 애니메이션 시작 */
   font-size: 7rem;
   align-items: center;
   gap: 20px;
