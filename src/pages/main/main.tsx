@@ -7,7 +7,26 @@ export default function Main() {
   return (
     <div>
       <div className={styles.mainContainer}>
-        <div className={styles.line1}>방문해주셔서 감사합니다.</div>
+        <div
+          className={`${styles.text} ${styles.leftToCenter}`}
+          style={{ animationDelay: "0s", animationDuration: "1s" }}
+        >
+          FrontEnd
+        </div>
+        <div
+          className={`${styles.text} ${styles.rightToCenter}`}
+          style={{ animationDelay: "0.5s", animationDuration: "1.5s" }}
+        >
+          개발자
+        </div>
+        <div
+          className={`${styles.text} ${styles.myName}`}
+          style={{ animationDelay: "1.6s", animationDuration: "3s" }}
+        >
+          신민호
+        </div>
+
+        {/* <div className={styles.line1}>방문해주셔서 감사합니다.</div>
         <div className={styles.line2}>
           저는 신입 프론트엔드 개발자{" "}
           <span className={styles.name}>신민호</span>입니다.
@@ -17,23 +36,27 @@ export default function Main() {
           <div className={styles.line4}>
             About엔 저에 대한 정보가 담겨있습니다.
           </div>
-        </div>
+        </div> */}
         <div className={styles.buttonBox}>
-          <div
-            onClick={() => {
-              navigate("/project");
-            }}
-            className={styles.buttons}
-          >
-            ProJect
-          </div>
-          <div
-            onClick={() => {
-              navigate("/about");
-            }}
-            className={styles.buttons}
-          >
-            About
+          <div>Go</div>
+          <div>To</div>
+          <div className={styles.buttonWrapper}>
+            <div
+              onClick={() => {
+                navigate("/project");
+              }}
+              className={styles.buttons}
+            >
+              ProJect
+            </div>
+            <div
+              onClick={() => {
+                navigate("/about");
+              }}
+              className={styles.buttons}
+            >
+              About
+            </div>
           </div>
         </div>
       </div>

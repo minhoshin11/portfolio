@@ -1,20 +1,36 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "./index.module.css";
 
 export default function Nav() {
+  const navigate = useNavigate();
   return (
     <div>
       <div className={styles.navContainer}>
-        <Link to="/" className={styles.homeLink}>
+        <div
+          onClick={() => {
+            navigate("/");
+          }}
+          className={styles.homeLink}
+        >
           Minho Shin
-        </Link>
+        </div>
         <div className={styles.linkBox}>
-          <Link to="/project" className={styles.link}>
+          <div
+            onClick={() => {
+              navigate("/project");
+            }}
+            className={styles.link}
+          >
             Project
-          </Link>
-          <Link to="/about" className={styles.link}>
+          </div>
+          <div
+            onClick={() => {
+              navigate("/about");
+            }}
+            className={styles.link}
+          >
             About
-          </Link>
+          </div>
         </div>
       </div>
     </div>

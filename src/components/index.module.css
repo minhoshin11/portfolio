@@ -11,12 +11,14 @@
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 999;
 }
 .homeLink {
   font-family: "Bold";
   text-decoration: none;
   font-size: 27px;
   color: black;
+  cursor: pointer;
 }
 .linkBox {
   display: flex;
@@ -28,6 +30,7 @@
   text-decoration: none;
   color: black;
   transition: color 0.5s ease;
+  cursor: pointer;
 }
 
 .link:hover {

@@ -1,26 +1,69 @@
 .mainContainer {
-  color: white;
-  padding-top: 30vh;
-  font-family: "Bold";
-  font-size: 50px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  height: auto;
-  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  overflow: hidden;
+}
+.text {
+  font-size: 10em;
+  position: absolute;
+  opacity: 0;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
-/* 공통 애니메이션 스타일 */
-@keyframes fadeIn {
-  from {
+/* 애니메이션 효과 정의 */
+@keyframes moveLeftToCenter {
+  0% {
+    left: -100%;
     opacity: 0;
   }
-  to {
+  50% {
+    left: 50%;
     opacity: 1;
+    transform: translateX(-50%);
+  }
+  100% {
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
   }
 }
 
+@keyframes moveRightToCenter {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  50% {
+    right: 50%;
+    opacity: 1;
+    transform: translateX(50%);
+  }
+  100% {
+    right: 50%;
+    opacity: 0;
+    transform: translateX(50%);
+  }
+}
+
+@keyframes myName {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* 이건 밑줄 */
 @keyframes underlineExpand {
   from {
     width: 0;
@@ -30,71 +73,70 @@
   }
 }
 
-.line1,
-.line2,
-.line3,
-.line4,
-.buttonBox {
-  opacity: 0; /* 처음엔 안보이도록 설정 */
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-.line1 {
-  animation: fadeIn 1s forwards;
+/* 각각의 애니메이션 적용 클래스 */
+.leftToCenter {
+  animation-name: moveLeftToCenter;
 }
 
-.line2 {
-  animation: fadeIn 1s forwards;
-  animation-delay: 1s;
+.rightToCenter {
+  animation-name: moveRightToCenter;
 }
 
-.line3 {
-  animation: fadeIn 1s forwards;
-  animation-delay: 2s;
+.myName {
+  animation-name: myName;
 }
 
-.line4 {
-  animation: fadeIn 1s forwards;
-  animation-delay: 3s;
-}
-.contentExplain {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.name {
-  position: relative;
-  display: inline-block;
-  animation: colorChange 2s forwards;
-  animation-delay: 2s; /* 빨갛게 변하는 애니메이션 지연시간 설정 */
-}
-
-.name::after {
+/* 밑줄 애니메이션 추가 */
+.myName::after {
   content: "";
+  display: block;
   position: absolute;
+  bottom: -10px;
   left: 0;
-  bottom: -2px; /* 밑줄 위치 조정 */
+  height: 5px;
   width: 0;
-  height: 5px; /* 밑줄 두께 */
-  background-color: white; /* 밑줄 색상 */
+  background-color: white;
   animation: underlineExpand 1s forwards;
-  animation-delay: 1s; /* 밑줄 애니메이션 지연시간 설정 */
+  animation-delay: 2s; /* 밑줄 애니메이션 딜레이 */
 }
 
+/* 버튼 박스 및 버튼 스타일 */
 .buttonBox {
   display: flex;
   padding: 0 25vw;
   justify-content: space-between;
-  /* animation: fadeIn 0s forwards;
-  animation-delay: 0s; */
   padding-bottom: 10vw;
   margin-top: 150px;
+  opacity: 0; /* 초기 상태를 숨김 */
   animation: fadeIn 1s forwards;
-  animation-delay: 4s;
+  animation-delay: 4s; /* 글자 애니메이션 후 버튼 애니메이션 시작 */
+  font-size: 7rem;
+  align-items: center;
+  gap: 20px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.buttonWrapper {
+  margin-left: 80px;
+  gap: 20px;
 }
 
 .buttons {
   transition: 0.5s ease;
+  font-size: 5rem;
 }
 
 .buttons:hover {
