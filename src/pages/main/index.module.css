@@ -24,12 +24,12 @@
     opacity: 0;
   }
   50% {
-    left: 50%;
+    left: 27%;
     opacity: 1;
     transform: translateX(-50%);
   }
   100% {
-    left: 50%;
+    left: 27%;
     opacity: 0;
     transform: translateX(-50%);
   }
@@ -41,12 +41,12 @@
     opacity: 0;
   }
   50% {
-    right: 50%;
+    right: 27%;
     opacity: 1;
     transform: translateX(50%);
   }
   100% {
-    right: 50%;
+    right: 27%;
     opacity: 0;
     transform: translateX(50%);
   }
@@ -84,11 +84,12 @@
 
 /* 각각의 애니메이션 적용 클래스 */
 .leftToCenter {
-  animation-name: moveLeftToCenter;
+  animation: moveLeftToCenter 2s forwards;
 }
 
 .rightToCenter {
-  animation-name: moveRightToCenter;
+  animation: moveRightToCenter 3s forwards;
+  /* animation-name: moveRightToCenter; */
 }
 
 .myName {
@@ -106,7 +107,7 @@
   width: 0;
   background-color: white;
   animation: underlineExpand 1s forwards;
-  animation-delay: 3.5s; /* 밑줄 애니메이션 딜레이 */
+  animation-delay: 3s; /* 밑줄 애니메이션 딜레이 */
 }
 
 /* 버튼 박스 및 버튼 스타일 */
@@ -118,7 +119,7 @@
   margin-top: 150px;
   opacity: 0; /* 초기 상태를 숨김 */
   animation: fadeIn 1s forwards;
-  animation-delay: 6s; /* 글자 애니메이션 후 버튼 애니메이션 시작 */
+  animation-delay: 5.5s; /* 글자 애니메이션 후 버튼 애니메이션 시작 */
   font-size: 7rem;
   align-items: center;
   gap: 20px;

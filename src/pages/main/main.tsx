@@ -9,19 +9,19 @@ export default function Main() {
       <div className={styles.mainContainer}>
         <div
           className={`${styles.text} ${styles.leftToCenter}`}
-          style={{ animationDelay: "0s", animationDuration: "2s" }}
+          style={{ animationDelay: "0s" }}
         >
           유저 경험을
         </div>
         <div
           className={`${styles.text} ${styles.rightToCenter}`}
-          style={{ animationDelay: "1.5s", animationDuration: "1.5s" }}
+          style={{ animationDelay: "0" }}
         >
           중시하는
         </div>
         <div
           className={`${styles.text} ${styles.myName}`}
-          style={{ animationDelay: "3.0s", animationDuration: "3s" }}
+          style={{ animationDelay: "2.5s", animationDuration: "3s" }}
         >
           FrontEnd 신민호
         </div>
