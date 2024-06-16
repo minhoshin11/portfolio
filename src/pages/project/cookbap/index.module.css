@@ -1,0 +1,44 @@
+.projectContainer {
+  margin: 0 2vw;
+  display: flex;
+  gap: 2vh;
+  padding-bottom: 4vh;
+}
+
+.introProduction {
+  box-sizing: border-box;
+  padding-right: 10px;
+  border-right: 3px solid white;
+  width: 23vw;
+}
+
+.explainWrapper {
+  box-sizing: border-box;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.explainWrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.explainSubject {
+  color: aqua;
+}
+.linkWrapper {
+  display: flex;
+  /* width: 30%; */
+  justify-content: space-around;
+}
+.linkWrapper a {
+  color: red;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.linkWrapper a:hover {
+  color: white;
+}
