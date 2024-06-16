@@ -119,7 +119,7 @@
   margin-top: 150px;
   opacity: 0; /* 초기 상태를 숨김 */
   animation: fadeIn 1s forwards;
-  animation-delay: 5.5s; /* 글자 애니메이션 후 버튼 애니메이션 시작 */
+  /* animation-delay: 5.5s; */
   font-size: 7rem;
   align-items: center;
   gap: 20px;
@@ -143,4 +143,7 @@
 .buttons:hover {
   color: gray;
   cursor: pointer;
+}
+.hidden {
+  display: none;
 }
