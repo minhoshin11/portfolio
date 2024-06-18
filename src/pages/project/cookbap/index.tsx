@@ -1,6 +1,15 @@
+import MoveImages from "../card/move_images";
 import styles from "./index.module.css";
 
 export default function CookBap() {
+  const pictures: { image: string; name: string }[] = [
+    { image: "https://ifh.cc/g/GVPJAD.jpg", name: "이름임" },
+    { image: "https://ifh.cc/g/j2GSv4.jpg", name: "이름2임" },
+    { image: "https://ifh.cc/g/j2GSv4.jpg", name: "이름3임" },
+    { image: "https://ifh.cc/g/j2GSv4.jpg", name: "이름4임" },
+    { image: "https://ifh.cc/g/j2GSv4.jpg", name: "이름5임" },
+  ];
+
   return (
     <div className={styles.projectContainer}>
       <div className={styles.introProduction}>
@@ -9,10 +18,16 @@ export default function CookBap() {
         <div>메인 프로젝트 / 인원 7명</div>
         <div>Front 4명 , Back 3명</div>
         <div>자취생을 위한 요리 레시피 커뮤니티</div>
-
-        {/* 이미지 */}
       </div>
       <div>
+        <div className={styles.imageWrapper}>
+          {/* <img
+            className={styles.images}
+            src="https://ifh.cc/g/j2GSv4.jpg"
+            alt=""
+          /> */}
+          <MoveImages pictures={pictures} count={5} />
+        </div>
         <div className={styles.explainWrapper}>
           <div className={styles.explainSubject}>초기 환경 세팅</div>
           <ul>

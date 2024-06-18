@@ -5,12 +5,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   margin: 0;
   overflow: hidden;
 }
+
 .text {
-  font-size: 10em;
+  font-size: 7em;
   position: absolute;
   opacity: 0;
   animation-duration: 2s;
@@ -18,37 +19,15 @@
 }
 
 /* 애니메이션 효과 정의 */
-@keyframes moveLeftToCenter {
+@keyframes opacityText {
   0% {
-    left: -100%;
     opacity: 0;
   }
   50% {
-    left: 27%;
     opacity: 1;
-    transform: translateX(-50%);
   }
   100% {
-    left: 27%;
     opacity: 0;
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes moveRightToCenter {
-  0% {
-    right: -100%;
-    opacity: 0;
-  }
-  50% {
-    right: 27%;
-    opacity: 1;
-    transform: translateX(50%);
-  }
-  100% {
-    right: 27%;
-    opacity: 0;
-    transform: translateX(50%);
   }
 }
 
@@ -84,12 +63,7 @@
 
 /* 각각의 애니메이션 적용 클래스 */
 .leftToCenter {
-  animation: moveLeftToCenter 2s forwards;
-}
-
-.rightToCenter {
-  animation: moveRightToCenter 3s forwards;
-  /* animation-name: moveRightToCenter; */
+  animation: opacityText 2s forwards;
 }
 
 .myName {
@@ -107,7 +81,7 @@
   width: 0;
   background-color: white;
   animation: underlineExpand 1s forwards;
-  animation-delay: 3s; /* 밑줄 애니메이션 딜레이 */
+  animation-delay: 2s; /* 밑줄 애니메이션 딜레이 */
 }
 
 /* 버튼 박스 및 버튼 스타일 */

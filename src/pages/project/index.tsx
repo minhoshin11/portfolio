@@ -1,5 +1,6 @@
 import CookBap from "./cookbap";
 import styles from "./index.module.css";
+import Landing from "./landing";
 
 export default function Project() {
   // const [modalOpen, setModalOpen] = useState(false);
@@ -8,14 +9,11 @@ export default function Project() {
   //https://velog.io/@bami/React-React%EC%97%90%EC%84%9C-%EB%AA%A8%EB%8B%AC%EC%B0%BD-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0
   // const navigate = useNavigate();
   return (
-    <div>
-      <div className={styles.projectContainer}>
-        {/* <div>
-          <button onClick={() => setModalOpen(true)}>모달 열기</button>
-        </div>
-        {modalOpen && <div></div>} */}
-      </div>
+    <div className={styles.projectContainer}>
+      <div className={styles.project}>Project</div>
+      <div className={styles.projectNames}>(CookBap,landing)</div>
       <CookBap />
+      <Landing />
     </div>
   );
 }

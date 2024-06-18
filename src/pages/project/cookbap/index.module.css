@@ -1,8 +1,24 @@
 .projectContainer {
   margin: 0 2vw;
   display: flex;
-  gap: 2vh;
+  gap: 3vh;
   padding-bottom: 4vh;
+  box-sizing: border-box;
+  border-top: 2px solid white;
+  /* padding-top: 30px; */
+}
+
+.imageWrapper {
+  display: flex;
+  width: 60vw;
+  height: 50vh;
+  margin-bottom: 2vh;
+  padding-top: 2vh;
+  /* justify-content: center; */
+}
+
+.images {
+  width: 600px;
 }
 
 .introProduction {
@@ -10,6 +26,7 @@
   padding-right: 10px;
   border-right: 3px solid white;
   width: 23vw;
+  padding-top: 2vh;
 }
 
 .explainWrapper {

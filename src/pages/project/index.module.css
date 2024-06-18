@@ -3,4 +3,18 @@ body {
 }
 .projectContainer {
   padding-top: 8vh;
+  display: flex;
+  flex-direction: column;
+}
+.project {
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+}
+
+.projectNames {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2.5vh;
 }

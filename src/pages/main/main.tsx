@@ -9,7 +9,7 @@ export default function Main() {
   useEffect(() => {
     setTimeout(() => {
       setButtonsVisible(true);
-    }, 5000);
+    }, 4000);
   }, [buttonsVisible]);
 
   return (
@@ -19,17 +19,17 @@ export default function Main() {
           className={`${styles.text} ${styles.leftToCenter}`}
           style={{ animationDelay: "0s" }}
         >
-          유저 경험을
+          유저 경험을 중시하는
         </div>
-        <div
+        {/* <div
           className={`${styles.text} ${styles.rightToCenter}`}
           style={{ animationDelay: "0" }}
         >
-          중시하는
-        </div>
+          
+        </div> */}
         <div
           className={`${styles.text} ${styles.myName}`}
-          style={{ animationDelay: "2.3s", animationDuration: "3s" }}
+          style={{ animationDelay: "1.5s", animationDuration: "3s" }}
         >
           FrontEnd 신민호
         </div>
