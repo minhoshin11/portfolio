@@ -21,11 +21,6 @@ export default function CookBap() {
       </div>
       <div>
         <div className={styles.imageWrapper}>
-          {/* <img
-            className={styles.images}
-            src="https://ifh.cc/g/j2GSv4.jpg"
-            alt=""
-          /> */}
           <MoveImages pictures={pictures} count={5} />
         </div>
         <div className={styles.explainWrapper}>
@@ -161,14 +156,66 @@ export default function CookBap() {
         <div className={styles.explainWrapper}>
           <div className={styles.explainSubject}>프로젝트 상세기술</div>
           <ul>
-            <li>Client :React TypeScript SocketIo Axios</li>
-            <li>publishing : CSS-Module Styled-components</li>
-            <li>server : AMAZON EC2</li>
+            <li>
+              <div>Client</div>
+              <img
+                width={"140px"}
+                height={"35px"}
+                src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=black"
+                alt=""
+              />
+              <img
+                width={"140px"}
+                height={"35px"}
+                src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+                alt=""
+              />
+              <img
+                width={"140px"}
+                height={"35px"}
+                src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=black"
+                alt=""
+              />
+              <img
+                width={"140px"}
+                height={"35px"}
+                src="https://img.shields.io/badge/socketdotio-gray?style=for-the-badge&logo=socketdotio&logoColor=black"
+                alt=""
+              />
+            </li>
+            <li>
+              <div>publishing</div>
+              <img
+                width={"140px"}
+                height={"35px"}
+                src="https://img.shields.io/badge/styledcomponents-DB7893?style=for-the-badge&logo=styledcomponents&logoColor=black"
+                alt=""
+              />
+              <img
+                width={"140px"}
+                height={"35px"}
+                src="https://img.shields.io/badge/cssmodules-1572B6?style=for-the-badge&logo=cssmodules&logoColor=black"
+                alt=""
+              />
+            </li>
+            <li>
+              <div>server</div>
+              <img
+                width={"140px"}
+                height={"35px"}
+                src="https://img.shields.io/badge/nginx-009639?style=for-the-badge&logo=nginx&logoColor=black"
+                alt=""
+              />
+            </li>
           </ul>
         </div>
         <div className={styles.linkWrapper}>
-          <a href="https://cookbap.netlify.app/">배포주소 가기</a>
-          <a href="https://dailycoding777.tistory.com/22">프로젝트 회고</a>
+          <a href="https://cookbap.netlify.app/" target="_blank">
+            배포주소 가기
+          </a>
+          <a href="https://dailycoding777.tistory.com/22" target="_blank">
+            프로젝트 회고
+          </a>
         </div>
       </div>
     </div>

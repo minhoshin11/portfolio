@@ -1,6 +1,6 @@
-import CookBap from "./cookbap";
 import styles from "./index.module.css";
-import Landing from "./landing";
+import CookBap from "./portpolio/cookbap";
+import Landing from "./portpolio/landing";
 
 export default function Project() {
   // const [modalOpen, setModalOpen] = useState(false);
