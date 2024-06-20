@@ -21,17 +21,12 @@ export default function Main() {
         >
           유저 경험을 중시하는
         </div>
-        {/* <div
-          className={`${styles.text} ${styles.rightToCenter}`}
-          style={{ animationDelay: "0" }}
-        >
-          
-        </div> */}
+
         <div
           className={`${styles.text} ${styles.myName}`}
           style={{ animationDelay: "1.5s", animationDuration: "3s" }}
         >
-          FrontEnd 신민호
+          Front-End 신민호
         </div>
         <div className={buttonsVisible ? styles.buttonBox : styles.hidden}>
           <div>Go</div>
@@ -43,7 +38,7 @@ export default function Main() {
               }}
               className={styles.buttons}
             >
-              ProJect
+              Project
             </div>
             <div
               onClick={() => {

@@ -105,8 +105,10 @@
   }
 }
 .buttonWrapper {
+  display: flex;
+  flex-direction: column;
   margin-left: 80px;
-  gap: 20px;
+  gap: 40px;
 }
 
 .buttons {

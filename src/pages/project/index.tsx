@@ -11,7 +11,7 @@ export default function Project() {
   return (
     <div className={styles.projectContainer}>
       <div className={styles.project}>Project</div>
-      <div className={styles.projectNames}>(CookBap,landing)</div>
+      <div className={styles.projectNames}>(CookBap,Landing)</div>
       <CookBap />
       <Landing />
     </div>

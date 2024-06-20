@@ -28,9 +28,7 @@ export default function About() {
               </li>
               <li className={styles.aboutLi}>
                 <div>이메일</div>
-                <div style={{ fontFamily: "initial" }}>
-                  tlsalsgh777@naver.com
-                </div>
+                <div>tlsalsgh777@naver.com</div>
               </li>
               <li className={styles.aboutLi}>
                 <div>학력</div>
@@ -54,64 +52,44 @@ export default function About() {
                     <img
                       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
                       alt="html5"
-                      width="80"
-                      height="80"
+                      className={styles.stackImgEightSize}
                     />
                     <img
                       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
                       alt="css3"
-                      width="80"
-                      height="80"
+                      className={styles.stackImgEightSize}
                     />
                     <img
                       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
                       alt="javascript"
-                      width="80"
-                      height="80"
+                      className={styles.stackImgEightSize}
                     />
                     <img
                       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
                       alt="typescript"
-                      width="80"
-                      height="80"
+                      className={styles.stackImgEightSize}
                     />
                   </div>
                   <div>
-                    {/* <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                      alt="javascript"
-                      width="70"
-                      height="70"
-                      />
-                      <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-                      alt="typescript"
-                      width="70"
-                      height="70"
-                      /> */}
                     <img
                       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
                       alt="react"
-                      width="80"
-                      height="80"
+                      className={styles.stackImgEightSize}
                     />{" "}
                     <img
                       src="https://www.vectorlogo.zone/logos/reactrouter/reactrouter-ar21.svg"
                       alt="reactRouter"
-                      width="80"
-                      height="80"
+                      className={styles.stackImgEightSize}
                     />
                     <img
                       src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
                       alt="nextjs"
-                      width="80"
-                      height="80"
+                      className={styles.stackImgEightSize}
                     />
                     <img
                       src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg"
                       alt="bootstrap"
-                      width="100"
-                      height="70"
+                      className={styles.stackImgEightSize}
                     />
                   </div>
                   {/* <img
@@ -129,27 +107,23 @@ export default function About() {
                 <img
                   src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
                   alt="git"
-                  width="70"
-                  height="70"
+                  className={styles.stackImgSevenSize}
                 />
                 <img
                   src="https://www.vectorlogo.zone/logos/github/github-tile.svg"
                   alt="github"
-                  width="70"
-                  height="70"
+                  className={styles.stackImgSevenSize}
                 />
                 <img
                   src="https://www.vectorlogo.zone/logos/discord/discord-tile.svg"
                   alt="discord"
-                  width="70"
-                  height="70"
+                  className={styles.stackImgSevenSize}
                 />
 
                 <img
                   src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
                   alt="figma"
-                  width="70"
-                  height="70"
+                  className={styles.stackImgSevenSize}
                 />
               </div>
             </div>

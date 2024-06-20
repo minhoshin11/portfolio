@@ -3,21 +3,23 @@ import styles from "./index.module.css";
 
 export default function CookBap() {
   const pictures: { image: string; name: string }[] = [
-    { image: "https://ifh.cc/g/GVPJAD.jpg", name: "이름임" },
-    { image: "https://ifh.cc/g/j2GSv4.jpg", name: "이름2임" },
-    { image: "https://ifh.cc/g/j2GSv4.jpg", name: "이름3임" },
-    { image: "https://ifh.cc/g/j2GSv4.jpg", name: "이름4임" },
-    { image: "https://ifh.cc/g/j2GSv4.jpg", name: "이름5임" },
+    { image: "https://ifh.cc/g/j2GSv4.jpg", name: "메인페이지" },
+    { image: "https://ifh.cc/g/zcyH5s.png", name: "유저 플로우" },
+    { image: "https://ifh.cc/g/YQ2TpF.jpg", name: "커뮤니티" },
+    { image: "https://ifh.cc/g/D4WYoJ.jpg", name: "채팅" },
+    { image: "https://ifh.cc/g/z1nlcN.jpg", name: "글 상세 페이지" },
+    { image: "https://ifh.cc/g/sbOxDw.jpg", name: "글 작성" },
+    { image: "https://ifh.cc/g/XLn3bH.jpg", name: "로그인" },
   ];
 
   return (
     <div className={styles.projectContainer}>
       <div className={styles.introProduction}>
-        <div>Cookbap</div>
+        <div style={{ fontSize: "2rem", color: "aqua" }}>CookBap</div>
+        <div>자취생을 위한 요리 레시피 커뮤니티</div>
         <div>2024.05.02~05.31</div>
         <div>메인 프로젝트 / 인원 7명</div>
         <div>Front 4명 , Back 3명</div>
-        <div>자취생을 위한 요리 레시피 커뮤니티</div>
       </div>
       <div>
         <div className={styles.imageWrapper}>
@@ -156,8 +158,8 @@ export default function CookBap() {
         <div className={styles.explainWrapper}>
           <div className={styles.explainSubject}>프로젝트 상세기술</div>
           <ul>
-            <li>
-              <div>Client</div>
+            <div>Client</div>
+            <li className={styles.stackImgWrapper}>
               <img
                 width={"140px"}
                 height={"35px"}
@@ -183,8 +185,8 @@ export default function CookBap() {
                 alt=""
               />
             </li>
-            <li>
-              <div>publishing</div>
+            <div>Publishing</div>
+            <li className={styles.stackImgWrapper}>
               <img
                 width={"140px"}
                 height={"35px"}
@@ -198,8 +200,8 @@ export default function CookBap() {
                 alt=""
               />
             </li>
-            <li>
-              <div>server</div>
+            <div>Server</div>
+            <li className={styles.stackImgWrapper}>
               <img
                 width={"140px"}
                 height={"35px"}

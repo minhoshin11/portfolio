@@ -3,22 +3,24 @@ import styles from "./index.module.css";
 
 export default function Landing() {
   const pictures: { image: string; name: string }[] = [
-    { image: "https://ifh.cc/g/GVPJAD.jpg", name: "이름임" },
-    { image: "https://ifh.cc/g/j2GSv4.jpg", name: "이름2임" },
-    { image: "https://ifh.cc/g/j2GSv4.jpg", name: "이름3임" },
-    { image: "https://ifh.cc/g/j2GSv4.jpg", name: "이름4임" },
-    { image: "https://ifh.cc/g/j2GSv4.jpg", name: "이름5임" },
+    { image: "https://ifh.cc/g/GVPJAD.jpg", name: "메인페이지" },
+    { image: "https://ifh.cc/g/yFmfGy.png", name: "유저 플로우" },
+    { image: "https://ifh.cc/g/WXkPcX.jpg ", name: "카테고리" },
+    { image: "https://ifh.cc/g/HGOc5A.jpg", name: "클럽 홈" },
+    { image: "https://ifh.cc/g/hlxSWP.jpg", name: "로그인" },
+    { image: "https://ifh.cc/g/gpZXTA.jpg", name: "모임개설" },
   ];
 
   return (
     <div className={styles.projectContainer}>
       <div className={styles.introProduction}>
-        <div>Landing</div>
+        <div style={{ fontSize: "2rem", color: "aqua" }}>Landing</div>
+        <div>한국인,한국에 사는 외국인의 커뮤니티</div>
         <div>2024.03.26 - 2024.04.30</div>
         <div>메인 프로젝트 / 인원 7명</div>
         <div>기획 1명,Front 3명 , Back 3명</div>
-        <div>한국인, 한국에 사는 외국인의 모임 커뮤니티</div>
       </div>
+
       <div>
         <div className={styles.imageWrapper}>
           <MoveImages pictures={pictures} count={5} />
@@ -102,8 +104,8 @@ export default function Landing() {
         <div className={styles.explainWrapper}>
           <div className={styles.explainSubject}>프로젝트 상세기술</div>
           <ul>
-            <li>
-              <div>Client</div>
+            <div>Client</div>
+            <li className={styles.stackImgWrapper}>
               <img
                 width={"140px"}
                 height={"35px"}
@@ -123,8 +125,8 @@ export default function Landing() {
                 alt=""
               />
             </li>
-            <li>
-              <div>publishing</div>
+            <div>Publishing</div>
+            <li className={styles.stackImgWrapper}>
               <img
                 width={"140px"}
                 height={"35px"}
@@ -138,8 +140,8 @@ export default function Landing() {
                 alt=""
               />
             </li>
-            <li>
-              <div>server</div>
+            <div>Server</div>
+            <li className={styles.stackImgWrapper}>
               <img
                 width={"140px"}
                 height={"35px"}
