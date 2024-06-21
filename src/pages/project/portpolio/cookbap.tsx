@@ -212,8 +212,8 @@ export default function CookBap() {
           </ul>
         </div>
         <div className={styles.linkWrapper}>
-          <a href="https://cookbap.netlify.app/" target="_blank">
-            배포주소 가기
+          <a href="https://youtu.be/033BFU8h00Q" target="_blank">
+            시연영상 보기
           </a>
           <a href="https://dailycoding777.tistory.com/22" target="_blank">
             프로젝트 회고

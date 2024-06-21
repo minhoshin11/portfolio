@@ -130,7 +130,7 @@ export default function Landing() {
               <img
                 width={"140px"}
                 height={"35px"}
-                src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css&logoColor=black"
+                src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=black"
                 alt=""
               />
               <img
@@ -152,11 +152,8 @@ export default function Landing() {
           </ul>
         </div>
         <div className={styles.linkWrapper}>
-          <a
-            href="http://oz-landing-kr.s3-website.kr.object.ncloudstorage.com/"
-            target="_blank"
-          >
-            배포주소 가기
+          <a href="https://youtu.be/Pt6Pm0DsJaI" target="_blank">
+            시연영상 보기
           </a>
           <a href="https://dailycoding777.tistory.com/21" target="_blank">
             프로젝트 회고

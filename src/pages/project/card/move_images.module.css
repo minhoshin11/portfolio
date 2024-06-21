@@ -7,7 +7,7 @@
   border-bottom: 2px solid black;
   border-top: 2px solid black;
   width: 800px;
-  height: 50vh;
+  height: 650px;
 }
 
 .imageCarousel {
@@ -23,7 +23,7 @@
 .imageBox {
   display: flex;
   width: 800px;
-  height: 50vh;
+  height: auto;
   justify-content: center;
   align-items: center;
   position: relative;
